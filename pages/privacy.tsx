@@ -1,49 +1,54 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function PrivacyPolicy() {
   return (
     <>
       <Head>
-        <title>Privacy Policy | Moodify</title>
-        <meta name="description" content="Read the privacy policy for the Moodify app." />
+        <title>Privacy Policy - Moodify</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>{`
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            line-height: 1.6;
+          }
+          .container {
+            max-width: 800px;
+            margin: auto;
+          }
+          h1 {
+            color: #ff6600;
+          }
+          a {
+            color: #0077cc;
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        `}</style>
       </Head>
-
-      <div style={{
-        minHeight: '100vh',
-        backgroundColor: '#0e1217',
-        color: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '40px 20px',
-        fontFamily: 'sans-serif',
-        lineHeight: '1.7'
-      }}>
-        <div style={{
-          maxWidth: '800px',
-          margin: '0 auto',
-          backgroundColor: '#1a1f25',
-          padding: '40px',
-          borderRadius: '16px',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.3)'
-        }}>
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '20px', color: '#ff8c00' }}>
-            Privacy Policy
-          </h1>
-          <p>
-            Moodify does not collect, store, or share any personal data. All selfies and comments are processed locally on your device and never leave your phone.
-          </p>
-          <p>
-            We do not use any third-party trackers or analytics in the free version of the app. If you upgrade to Premium, purchase data is handled securely via our payment processor and not stored by us.
-          </p>
-          <p>
-            By using Moodify, you agree to these terms. If you have any questions or concerns, please contact us at moodify.app.help@gmail.com.
-          </p>
-          <p style={{ marginTop: '30px', fontStyle: 'italic', fontSize: '0.9rem' }}>
-            Last updated: June 14, 2025
-          </p>
-        </div>
-      </div>
+      <main className="container">
+        <h1>Privacy Policy</h1>
+        <p>
+          Moodify is committed to protecting your privacy. We do not collect,
+          store, or share any personal data, including photos or camera data.
+        </p>
+        <p>
+          The app only uses your device’s camera locally to generate fun
+          captions and effects. No selfie or image leaves your device.
+        </p>
+        <p>We do not require user accounts, and we do not track you in any way.</p>
+        <p>
+          If you have any questions or concerns about this policy, feel free to
+          contact us at{' '}
+          <a href="mailto:support@moodify.app">support@moodify.app</a>.
+        </p>
+        <p>By using Moodify, you agree to this privacy policy.</p>
+      </main>
     </>
-  )
+  );
 }
