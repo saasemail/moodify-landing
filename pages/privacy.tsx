@@ -33,6 +33,7 @@ export default function PrivacyPolicy() {
       </Head>
       <main className="container">
         <h1>Privacy Policy</h1>
+        <h1>Privacy Policy (Updated)</h1>
         <p>
           Moodify is committed to protecting your privacy. We do not collect,
           store, or share any personal data, including photos or camera data.
